@@ -174,7 +174,7 @@ export const featured = [
     description:
       "An automated surface-inspection system for production bottles. A DenseNet classifier alone was not reliable on the real line, so it runs alongside an autoencoder that cross-verifies by reconstruction — two models that have to agree before a unit passes.",
     metrics: [
-      { value: 0.04, suffix: "s", label: "per-unit inspection, from 5s" },
+      { value: 0.04, suffix: "s", label: "per-unit inspection on GPU, from 5s" },
       { value: 93, suffix: "%", label: "defect precision, from 50%" },
       { value: 2, suffix: "", label: "models cross-verifying" },
     ],
