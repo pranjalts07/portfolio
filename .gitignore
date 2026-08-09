@@ -8,5 +8,5 @@ dist-ssr
 .env
 .env.*
 
-# your friend's leftover assets — not part of your site
+# scratch assets, not part of the site
 _to_delete/
