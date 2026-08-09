@@ -1,0 +1,73 @@
+/* ============================================================
+   Design tokens — "Paper & Ink" editorial system
+   Warm off-white canvas, near-black ink, one vivid accent,
+   serif display + grotesk body + technical mono.
+   ============================================================ */
+
+:root {
+  /* --- Surfaces (warm paper) --- */
+  --paper: #f7f5f0;
+  --paper-2: #efece4; /* deeper band */
+  --card: #fffefb;
+  --ink-invert: #f7f5f0;
+
+  /* --- Ink --- */
+  --ink: #1a1815;
+  --ink-soft: #45413a;
+  --ink-muted: #726c61;
+  --ink-faint: #a39c8f;
+
+  /* --- Accent (vermilion) --- */
+  --accent: #cf4b26;
+  --accent-hover: #e0552d;
+  --accent-soft: rgba(207, 75, 38, 0.1);
+
+  /* --- Lines --- */
+  --hairline: rgba(26, 24, 21, 0.1);
+  --hairline-strong: rgba(26, 24, 21, 0.22);
+
+  /* --- Shadows (warm-tinted) --- */
+  --shadow-sm: 0 1px 2px rgba(26, 24, 21, 0.05);
+  --shadow-md: 0 18px 46px -18px rgba(26, 24, 21, 0.22);
+  --shadow-lg: 0 40px 80px -28px rgba(26, 24, 21, 0.3);
+
+  /* --- Type families --- */
+  --font-display: "Instrument Serif", "Times New Roman", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+
+  /* --- Fluid type scale --- */
+  --fs-mega: clamp(3.4rem, 13vw, 12rem); /* hero name */
+  --fs-display: clamp(2.6rem, 7vw, 6rem); /* big statements */
+  --fs-h2: clamp(2rem, 5vw, 3.75rem); /* section titles (serif) */
+  --fs-h3: clamp(1.35rem, 2.6vw, 2rem);
+  --fs-lead: clamp(1.15rem, 1.7vw, 1.5rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9375rem;
+  --fs-label: 0.75rem; /* mono labels */
+
+  --lh-tight: 0.98;
+  --lh-snug: 1.08;
+  --lh-body: 1.62;
+
+  /* --- Layout --- */
+  --maxw: 1180px;
+  --maxw-wide: 1360px;
+  --maxw-narrow: 760px;
+  --gutter: clamp(20px, 5.5vw, 72px);
+  --section-y: clamp(84px, 13vh, 190px);
+
+  /* --- Radii (restrained) --- */
+  --r-sm: 8px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-pill: 980px;
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.76, 0, 0.24, 1);
+  --dur-fast: 0.3s;
+  --dur: 0.55s;
+}
