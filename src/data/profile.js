@@ -24,7 +24,6 @@ export const profile = {
     github: "https://github.com/pranjalts07",
     linkedin: "https://www.linkedin.com/in/pranjal-ts/",
     email: "pranjal.tariga.suresh@gmail.com",
-    phone: "510-361-7584",
   },
 };
 
