@@ -10,3 +10,5 @@ dist-ssr
 
 # scratch assets, not part of the site
 _to_delete/
+.vercel
+.env*
