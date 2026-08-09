@@ -24,7 +24,10 @@ export function Reveal({ children, className, delay = 0, as = "div" }) {
       className={className}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
+      /* "some" — not a ratio. Project cards are taller than the viewport, so a
+         fractional amount can never be met after an anchor jump and the block
+         would stay invisible until the reader happened to scroll. */
+      viewport={{ once: true, amount: "some" }}
       variants={{
         hidden: { opacity: 0, y: 26 },
         show: {
@@ -40,7 +43,7 @@ export function Reveal({ children, className, delay = 0, as = "div" }) {
 }
 
 /* Stack: staggers its direct children (each should be a RevealItem). */
-export function Stack({ children, className, amount = 0.2 }) {
+export function Stack({ children, className, amount = "some" }) {
   return (
     <motion.div
       className={className}

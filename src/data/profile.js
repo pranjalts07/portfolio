@@ -153,8 +153,8 @@ export const featured = [
     ],
     tags: ["Python", "RAG", "Transformers", "NLP", "Hugging Face"],
     links: {
-      github: null,
-      demo: "https://mediquery-app.azurewebsites.net",
+      github: "https://github.com/pranjalts07/mediquery",
+      demo: null,
     },
     pipeline: {
       title: "Answer path",
@@ -180,8 +180,8 @@ export const featured = [
     ],
     tags: ["PyTorch", "Computer Vision", "CNNs", "OpenCV", "Autoencoders"],
     links: {
-      github: null,
-      demo: "https://defectscope.azurewebsites.net",
+      github: "https://github.com/pranjalts07/defectscope",
+      demo: null,
     },
     pipeline: {
       title: "Inspection path",
@@ -234,8 +234,8 @@ export const featured = [
     ],
     tags: ["Python", "scikit-learn", "pandas", "Feature Engineering"],
     links: {
-      github: null,
-      demo: "https://churn-prediction.azurewebsites.net",
+      github: "https://github.com/pranjalts07/customer-churn-prediction",
+      demo: null,
     },
     pipeline: {
       title: "Scoring path",
