@@ -68,8 +68,8 @@ export default function Hero() {
           >
             <p className="hero__tag">
               I build <b>machine learning systems</b> that hold up outside the
-              notebook — RAG pipelines, computer-vision inspection, and
-              fine-tuning that fits a real budget.
+              notebook — RAG pipelines, computer-vision inspection, and churn
+              models that rank by revenue at risk.
             </p>
 
             <div className="hero__facts">
@@ -80,6 +80,10 @@ export default function Hero() {
               <div>
                 <span>Focus</span>
                 <b>ML · NLP · Vision</b>
+              </div>
+              <div>
+                <span>Authorization</span>
+                <b>{profile.authorization}</b>
               </div>
               <div>
                 <span>Credential</span>

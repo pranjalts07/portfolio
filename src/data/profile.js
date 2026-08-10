@@ -11,11 +11,15 @@ export const profile = {
 
   role: "Machine Learning Engineer",
   location: "San Francisco, CA",
-  status: "Available — New Grad 2027",
+  status: "Open to internships · Full-time 2027",
+
+  // Stated plainly: a recruiter who has to guess at authorization usually
+  // guesses against you.
+  authorization: "F-1 · CPT/OPT eligible",
 
   tagline:
     "I build machine learning systems that hold up outside the notebook — " +
-    "RAG pipelines, computer-vision inspection, and fine-tuning that fits a real budget.",
+    "RAG pipelines, computer-vision inspection, and churn models that rank by revenue at risk.",
 
   // Résumé PDF lives in /public with this exact name.
   resumeUrl: "/Pranjal_TS_Resume.pdf",
@@ -115,7 +119,7 @@ export const about = {
 
 /* --- Impact band (count-up stats) --- */
 export const impactStats = [
-  { value: 98, suffix: "%", label: "Fine-tuning compute cost eliminated (LoRA optimizer)" },
+  { value: 365, prefix: "$", suffix: "K", label: "At-risk revenue identified (Churn Radar)" },
   { value: 10000, suffix: "+", label: "Security events processed (Toyota Kirloskar)" },
   { value: 6, suffix: "%", label: "Hallucination rate, down from 27% (MediQuery)" },
   { value: 1, suffix: "", label: "IEEE peer-reviewed publication" },
@@ -130,10 +134,11 @@ export const experience = [
     where: "Bangalore, India",
     blurb:
       "Applied ML on the security operations side — turning raw incident streams into metrics the team could actually staff against.",
+    // Impact first: a screener reads bullet one and skims the rest.
     bullets: [
-      "Developed an Automated Incident Response Metric System, an incident-analysis system that processed 10,000+ real security events, applied token-based classification, and generated SLA metrics to support priority-based response.",
       "Identified 31% of P2 incidents breaching SLA during night shifts, surfacing a critical staffing gap and enabling targeted resource reallocation across security operations.",
       "Replaced the manual monthly reporting process by automating incident analysis workflows, cutting report generation time by 70% and saving 15+ analyst hours per month.",
+      "Built the Automated Incident Response Metric System behind both: processed 10,000+ real security events, applied token-based classification, and generated SLA metrics to support priority-based response.",
     ],
   },
 ];
@@ -144,6 +149,7 @@ export const featured = [
     no: "01",
     name: "MediQuery",
     flag: "RAG Healthcare Assistant",
+    scope: "Solo build",
     description:
       "A retrieval-augmented medical chatbot constrained to verified sources. NIH PubMed and medical encyclopedias are normalised into a clean passage corpus, retrieved, then reranked before generation — so the model answers from evidence rather than memory.",
     metrics: [
@@ -171,6 +177,7 @@ export const featured = [
     no: "02",
     name: "DefectScope",
     flag: "Production Defect Detection",
+    scope: "Solo build",
     description:
       "An automated surface-inspection system for production bottles. A DenseNet classifier alone was not reliable on the real line, so it runs alongside an autoencoder that cross-verifies by reconstruction — two models that have to agree before a unit passes.",
     metrics: [
@@ -196,35 +203,9 @@ export const featured = [
   },
   {
     no: "03",
-    name: "LoRA Search",
-    flag: "LLM Fine-Tuning Optimizer",
-    description:
-      "A self-optimising search over LoRA configurations that replaces manual fine-tuning trial-and-error. Blockwise crossover and layerwise mutation operators drive an NSGA-II search; swapping random parameter exchange for whole-layer exchange fixed the corruption that broke earlier runs.",
-    metrics: [
-      { value: 98, suffix: "%", label: "compute cost eliminated" },
-      { value: 1.2, suffix: "M", label: "params, down from 87.5M" },
-      { value: 93.8, suffix: "%", label: "accuracy across 3 NLP tasks" },
-    ],
-    tags: ["PyTorch", "LoRA", "NSGA-II", "BERT", "NLP"],
-    links: {
-      github: null,
-      demo: null,
-    },
-    pipeline: {
-      title: "Search loop",
-      nodes: [
-        { label: "BERT-family base models", detail: "×5" },
-        { label: "LoRA configuration space" },
-        { label: "NSGA-II: blockwise crossover", hot: true },
-        { label: "layerwise mutation" },
-        { label: "whole-layer exchange", detail: "→ 1.2M params" },
-      ],
-    },
-  },
-  {
-    no: "04",
     name: "Churn Radar",
     flag: "Customer Churn Prediction",
+    scope: "Solo build",
     description:
       "A churn model for telecom customers that ranks by revenue at risk rather than probability alone, so retention effort goes where it pays. Blank billing charges and inconsistent service categories were resolved into a stable 33-feature set before modelling.",
     metrics: [
@@ -284,5 +265,9 @@ export const education = [
 export const contact = {
   pre: "What's next",
   blurb:
-    "I'm looking for New Grad machine learning and data science roles for 2027 — applied ML, NLP, computer vision, and the systems that carry them. Recruiters and engineers shipping models to real users, my inbox is open.",
+    "I'm looking for machine learning and data science roles — internships for " +
+    "Fall 2026, Winter, and Summer 2027, and full-time from June 2027 onward. " +
+    "Applied ML, NLP, computer vision, and the systems that carry them. I'm an " +
+    "international student on an F-1 visa, eligible to work through CPT and OPT. " +
+    "Recruiters and engineers shipping models to real users, my inbox is open.",
 };

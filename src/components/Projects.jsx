@@ -66,7 +66,12 @@ function FeaturedProject({ project, index }) {
       </div>
 
       <div>
-        <span className="project__no">{project.no} / Featured</span>
+        <span className="project__no">
+          {project.no} / Featured
+          {project.scope && (
+            <span className="project__scope"> · {project.scope}</span>
+          )}
+        </span>
         <div className="project__flag">{project.flag}</div>
         <h3 className="project__name">{project.name}</h3>
         <p className="project__desc">{project.description}</p>
@@ -117,8 +122,9 @@ export default function Projects() {
             Systems I've <em>built.</em>
           </h2>
           <p className="section-intro">
-            Four systems where a model met a hard constraint — a latency budget,
-            a compute bill, or an answer that had to be right.
+            Three systems where a model met a hard constraint — a latency
+            budget, a retention budget, or an answer that had to be right. Each
+            one built solo, end to end.
           </p>
         </Reveal>
 

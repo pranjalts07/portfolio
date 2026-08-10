@@ -784,6 +784,9 @@ img {
   letter-spacing: 0.1em;
   color: var(--ink-faint);
 }
+.project__scope {
+  color: var(--accent);
+}
 .project__flag {
   font-family: var(--font-mono);
   font-size: var(--fs-label);
