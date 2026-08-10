@@ -43,7 +43,9 @@ function FeaturedProject({ project, index }) {
   return (
     <Reveal className={`project ${flip ? "project--flip" : ""}`}>
       <div
-        className="project__visual"
+        className={`project__visual ${
+          project.image ? "project__visual--shot" : ""
+        }`}
         ref={visualRef}
         onMouseMove={onMove}
       >

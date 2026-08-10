@@ -748,12 +748,17 @@ img {
   box-shadow: var(--shadow-md);
   position: relative;
 }
+/* Screenshots keep their own proportions. Forcing a 5:4 frame around a
+   16:9-ish capture crops off the right third — which is where the numbers are. */
+.project__visual--shot {
+  aspect-ratio: 188 / 101;
+}
 .project__shot {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top left;
+  object-position: center;
 }
 .project__visual::before {
   /* cursor spotlight */
