@@ -748,6 +748,13 @@ img {
   box-shadow: var(--shadow-md);
   position: relative;
 }
+.project__shot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
 .project__visual::before {
   /* cursor spotlight */
   content: "";

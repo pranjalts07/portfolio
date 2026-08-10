@@ -47,7 +47,20 @@ function FeaturedProject({ project, index }) {
         ref={visualRef}
         onMouseMove={onMove}
       >
-        <Pipeline data={project.pipeline} />
+        {/* A screenshot of the live app carries more weight than a diagram of it.
+            Projects without a deployment keep the pipeline. */}
+        {project.image ? (
+          <img
+            className="project__shot"
+            src={project.image}
+            alt={`${project.name} running in the browser`}
+            loading="lazy"
+            width="1504"
+            height="812"
+          />
+        ) : (
+          <Pipeline data={project.pipeline} />
+        )}
       </div>
 
       <div>

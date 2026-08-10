@@ -233,9 +233,11 @@ export const featured = [
       { value: 80, suffix: "%", label: "ranked above non-churners" },
     ],
     tags: ["Python", "scikit-learn", "pandas", "Feature Engineering"],
+    // A screenshot of the running app replaces the pipeline diagram when present.
+    image: "/projects/churnsense.jpg",
     links: {
       github: "https://github.com/pranjalts07/customer-churn-prediction",
-      demo: null,
+      demo: "https://churnsense-qj1h.onrender.com",
     },
     pipeline: {
       title: "Scoring path",
