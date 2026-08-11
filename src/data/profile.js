@@ -158,9 +158,10 @@ export const featured = [
       { value: 1.4, suffix: "s", label: "response time" },
     ],
     tags: ["Python", "RAG", "Transformers", "NLP", "Hugging Face"],
+    image: "/projects/mediquery.jpg",
     links: {
       github: "https://github.com/pranjalts07/mediquery",
-      demo: null,
+      demo: "https://mediquery-exxs.onrender.com",
     },
     pipeline: {
       title: "Answer path",
@@ -186,9 +187,10 @@ export const featured = [
       { value: 2, suffix: "", label: "models cross-verifying" },
     ],
     tags: ["PyTorch", "Computer Vision", "CNNs", "OpenCV", "Autoencoders"],
+    image: "/projects/defectscope.jpg",
     links: {
       github: "https://github.com/pranjalts07/defectscope",
-      demo: null,
+      demo: "https://defectscope.onrender.com",
     },
     pipeline: {
       title: "Inspection path",
