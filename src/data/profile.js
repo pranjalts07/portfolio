@@ -58,11 +58,11 @@ export const about = {
       "(Data Science concentration, graduating June 2027), working across applied " +
       "machine learning, NLP, and computer vision.",
     "My work tends to start where a model meets a hard constraint — a latency " +
-      "budget, a compute bill, or an answer that has to be right. That's produced a " +
+      "budget, a retention budget, or an answer that has to be right. That's produced a " +
       "medical RAG assistant that cut hallucination from 27% to 6%, a dual-model " +
-      "vision system inspecting production bottles in 0.04s, and an evolutionary " +
-      "LoRA search that removed 98% of fine-tuning cost. I'm also IEEE-published, " +
-      "on machine-learning prediction of healthy life expectancy.",
+      "vision system inspecting production bottles in 0.04s, and a churn model that " +
+      "ranks customers by revenue at risk rather than probability alone. I'm also " +
+      "IEEE-published, on machine-learning prediction of healthy life expectancy.",
   ],
   // Mirrors the résumé's Technical Skills section.
   skills: [
